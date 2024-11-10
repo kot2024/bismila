@@ -1,0 +1,246 @@
+body {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+nav {
+    background-color: #000000; /* Set background color */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Stack title and buttons vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 20px 20px; /* Added padding for spacing */
+}
+
+.nav-title {
+    color: white;
+    font-weight: bold;
+    font-size: 25px; /* Increased font size */
+    margin-bottom: 20px; /* Space between title and buttons */
+}
+
+.nav-buttons {
+    display: flex; /* Display buttons in a row */
+    justify-content: center; /* Center buttons */
+}
+
+.nav-button {
+    background-color: #000000;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin: 0 10px; /* Space between buttons */
+}
+
+.nav-button:hover {
+    background-color: #111111;
+}
+
+
+.form-container {
+    text-align: center;
+}
+
+.form-container select {
+    padding: 10px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+.form-container1 select {
+    padding: 10px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-container input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000000; /* Set background color */
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.form-container1 button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000000; /* Set background color */
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-container button:hover {
+    background-color: #111111;
+}
+
+#container {
+    width: 80%;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#mbrapa {
+    padding: 5px;
+    margin-bottom: 10px; 
+    background-color: #8e8989;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    align-self: flex-start;
+    margin-right: auto;
+}
+
+
+.general_table{
+    border-collapse: collapse;
+    table-layout: auto; 
+    width: 100%;
+}
+
+.general_table th, .general_table td {
+    border: 1px solid #ccc;
+    padding: 10px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px; 
+}
+
+.navigation {
+    background-color: #000000; /* Set background color */
+    color: white;
+    padding: 12px 24px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-bottom: 10px; /* Add margin bottom to create space between buttons */
+}
+
+.new-button:hover {
+    background-color: #111111;
+}
+
+#table-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 300px;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure the table container takes up full width */
+}
+
+.shiko-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000000; /* Set background color */
+    color: white;
+    cursor: pointer;
+}
+
+.shiko-button:hover {
+    background-color: #111111;
+}
+
+.page-header {
+    text-align: center;
+    color: #000000; /* Set text color */
+    font-size: 24px; /* Set font size */
+    margin: 20px auto; /* Center horizontally */
+    font-weight: bold;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .page-header {
+        font-size: 20px; /* Decrease font size for smaller screens */
+        margin: 15px auto; /* Adjust margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header {
+        font-size: 18px; /* Further decrease font size for mobile devices */
+        margin: 10px auto; /* Further adjust margin */
+    }
+}
+
+
+
+/* Styles for tablets */
+@media (max-width: 768px) {
+    #container {
+        width: 90%;
+    }
+
+    .form-container input[type="text"] {
+        width: 50%;
+    }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-buttons {
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    .nav-button {
+        margin-bottom: 10px;
+    }
+
+    #container {
+        width: 95%;
+    }
+
+    .form-container input[type="text"] {
+        width: 100%;
+    }
+}
